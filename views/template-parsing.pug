@@ -1,0 +1,11 @@
+doctype html
+html
+    head 
+        title=name 
+    body 
+        h1 this is my page name is #{name}
+    if(user)
+        h1 Name of use #{user.name} and age is #{user.age} 
+        a(href=url) link to google
+    else 
+        a(href="/signup") signup
